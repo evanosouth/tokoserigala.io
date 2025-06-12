@@ -1,123 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Toko Serigala</title>
-  <!-- Bootstrap 5.3 CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Toko Serigala Hunter</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f5f5dc;
+    }
+    h1, h2, h5, p {
+      color: #2e2e2e;
+    }
+    .btn-success {
+      background-color: #556b2f;
+      border-color: #556b2f;
+    }
+    .btn-success:hover {
+      background-color: #6b8e23;
+      border-color: #6b8e23;
+    }
+    .card {
+      border-radius: 10px;
+      border: 2px solid #8b4513;
+      background-color: #fffaf0;
+    }
+    .card-title {
+      color: #2f4f4f;
+      font-weight: bold;
+    }
+    header, section {
+      position: relative;
+    }
+    .tree {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 80px;
+      opacity: 0.3;
+    }
+  </style>
 </head>
 <body>
-  <!-- Header: identitas toko + gambar -->
-  <section class="py-5 bg-light">
-    <div class="container">
-      <div class="row align-items-center">
-        <!-- Kiri: identitas toko -->
-        <div class="col-md-6 mb-4 mb-md-0">
-          <h1 class="display-4 fw-bold">Toko Serigala</h1>
-          <p class="lead">Produk berkualitas, harga terjangkau. Temukan semua kebutuhanmu di sini!</p>
-          <p>Ayo pesan sekarang dan rasakan kualitas terbaik dari kami.</p>
-          <a href="https://wa.me/6281234567890?text=Halo%20Toko%20Serigala%2C%20saya%20ingin%20bertanya%20tentang%20produk." target="_blank" class="btn btn-success btn-lg me-2">
-            Chat WhatsApp Kami
-          </a>
-        </div>
-        <!-- Kanan: gambar toko -->
-        <div class="col-md-6 text-center">
-          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Gambar Toko Serigala" class="img-fluid rounded shadow" />
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Produk Section -->
-  <section class="py-5">
-    <div class="container">
-      <h2 class="mb-4 text-center">Produk Kami</h2>
-      <div class="row g-4">
-        <!-- Produk 1 -->
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
-            <img src="img/wolf.png" class="card-img-top" alt="Produk 1" />
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Produk A</h5>
-              <p class="card-text flex-grow-1">Deskripsi singkat produk A yang menarik perhatian.</p>
-              <a href="https://wa.me/6281234567890?text=Saya%20tertarik%20dengan%20Produk%20A" target="_blank" class="btn btn-success mt-auto">
-                Pesan via WhatsApp
-              </a>
-            </div>
-          </div>
-        </div>
-        <!-- Produk 2 -->
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
-            <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=400&q=80" class="card-img-top" alt="Produk 2" />
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Produk B</h5>
-              <p class="card-text flex-grow-1">Deskripsi singkat produk B yang sangat berkualitas.</p>
-              <a href="https://wa.me/6281234567890?text=Saya%20tertarik%20dengan%20Produk%20B" target="_blank" class="btn btn-success mt-auto">
-                Pesan via WhatsApp
-              </a>
-            </div>
-          </div>
-        </div>
-        <!-- Produk 3 -->
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
-            <img src="https://images.unsplash.com/photo-1495121605193-b116b5b9c47c?auto=format&fit=crop&w=400&q=80" class="card-img-top" alt="Produk 3" />
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Produk C</h5>
-              <p class="card-text flex-grow-1">Deskripsi singkat produk C yang laris di pasaran.</p>
-              <a href="https://wa.me/6281234567890?text=Saya%20tertarik%20dengan%20Produk%20C" target="_blank" class="btn btn-success mt-auto">
-                Pesan via WhatsApp
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- About Us Section -->
-  <section class="py-5 bg-light">
-    <div class="container">
-      <h2 class="mb-4 text-center">Tentang Kami</h2>
-      <p class="lead text-center mx-auto" style="max-width: 700px;">
-        Toko Serigala berdedikasi menyediakan produk-produk berkualitas dengan harga terbaik.
-        Kami selalu mengutamakan kepuasan pelanggan dan pelayanan cepat. Bergabunglah dengan ribuan pelanggan puas kami dan rasakan perbedaannya!
-      </p>
-      <div class="text-center mt-4">
-        <a href="https://wa.me/6281234567890?text=Halo%20Toko%20Serigala%2C%20saya%20ingin%20tahu%20lebih%20tentang%20toko%20anda." target="_blank" class="btn btn-success btn-lg">
-          Hubungi Kami Sekarang
+<!-- Header -->
+<section class="py-5 bg-light">
+  <img src="https://img.icons8.com/emoji/96/deciduous-tree.png" class="tree" />
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 mb-4 mb-md-0">
+        <h1 class="display-4 fw-bold">Toko Serigala Hunter</h1>
+        <p class="lead">Perlengkapan berburu dan survival terbaik untuk petualang sejati.</p>
+        <p>Siap jelajahi alam bebas? Mulai dari sini.</p>
+        <a href="https://wa.me/6282179480009?text=Halo%20Toko%20Serigala%20Hunter%2C%20saya%20ingin%20bertanya%20tentang%20perlengkapan." target="_blank" class="btn btn-success btn-lg me-2">
+          Hubungi Kami di WhatsApp
         </a>
       </div>
-    </div>
-  </section>
-
-  <!-- Maps Section -->
-  <section class="py-5">
-    <div class="container">
-      <h2 class="mb-4 text-center">Lokasi Kami</h2>
-      <div class="ratio ratio-16x9 shadow rounded">
-        <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.471115945374!2d104.74541927485296!3d-2.966695539771547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3b75d894eb7723%3A0x32ac15916a290c9c!2sKursus%20Komputer%20Palembang%20dan%20Kursus%20Bahasa%20Inggris%20Palembang%20Palcomtech!5e0!3m2!1sid!2sid!4v1749561731187!5m2!1sid!2sid" 
-            width="600" 
-            height="450" 
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-      </div>
-      <p class="text-center mt-3">Jl. Contoh Alamat No.123, Kota Contoh, Indonesia</p>
-      <div class="text-center">
-        <a href="https://wa.me/6281234567890?text=Halo%20Toko%20Serigala%2C%20saya%20ingin%20mengunjungi%20toko%20anda." target="_blank" class="btn btn-success">
-          Chat WhatsApp untuk info lokasi
-        </a>
+      <div class="col-md-6 text-center">
+        <img src="https://img.freepik.com/free-vector/hiking-camping-equipment_1284-7347.jpg?w=600" alt="Perlengkapan Alam" class="img-fluid rounded shadow" />
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Bootstrap JS (optional for some components) -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Produk -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="mb-4 text-center">Produk Unggulan</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="https://img.freepik.com/free-photo/hunting-knife-with-leather-cover_123827-20902.jpg?w=400" class="card-img-top" alt="Pisau Berburu" />
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Pisau Berburu</h5>
+            <p class="card-text flex-grow-1">Pisau tajam serbaguna untuk berburu dan bertahan hidup.</p>
+            <a href="https://wa.me/6282179480009?text=Saya%20tertarik%20dengan%20Pisau%20Berburu" target="_blank" class="btn btn-success mt-auto">Pesan Sekarang</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="https://img.freepik.com/free-photo/green-camouflage-uniform-boots-knife-flat-lay_23-2148783604.jpg?w=400" class="card-img-top" alt="Pakaian Kamuflase" />
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Pakaian Kamuflase</h5>
+            <p class="card-text flex-grow-1">Pakaian hutan tahan cuaca untuk berburu atau ekspedisi.</p>
+            <a href="https://wa.me/6282179480009?text=Saya%20tertarik%20dengan%20Pakaian%20Kamuflase" target="_blank" class="btn btn-success mt-auto">Pesan Sekarang</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="https://img.freepik.com/free-photo/top-view-travel-concept-with-map_23-2148309565.jpg?w=400" class="card-img-top" alt="Peralatan Survival" />
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Kit Survival</h5>
+            <p class="card-text flex-grow-1">Komplit dengan kompas, senter, api, dan P3K mini.</p>
+            <a href="https://wa.me/6282179480009?text=Saya%20tertarik%20dengan%20Kit%20Survival" target="_blank" class="btn btn-success mt-auto">Pesan Sekarang</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Tentang Kami -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="mb-4 text-center">Tentang Kami</h2>
+    <p class="lead text-center mx-auto" style="max-width: 700px;">
+      Toko Serigala Hunter adalah pusat perlengkapan alam bebas untuk para pemburu dan petualang. Dari pisau survival hingga tenda, semua tersedia di sini.
+    </p>
+    <div class="text-center mt-4">
+      <a href="https://wa.me/6282179480009?text=Halo%20saya%20ingin%20tahu%20lebih%20tentang%20produk%20anda" target="_blank" class="btn btn-success btn-lg">
+        Hubungi Kami Sekarang
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Lokasi -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="mb-4 text-center">Lokasi Kami</h2>
+    <div class="ratio ratio-16x9 shadow rounded">
+      <iframe src="https://www.google.com/maps/embed?..." style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <p class="text-center mt-3">Jl. Petualang Raya No.88, Kota Alam, Indonesia</p>
+    <div class="text-center">
+      <a href="https://wa.me/6282179480009?text=Halo%2C%20dimana%20lokasi%20toko%20berburu%20anda%3F" target="_blank" class="btn btn-success">Info Lokasi</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-light text-center text-muted py-4 mt-5" style="border-top: 3px dashed #8b4513;">
+  <div class="container">
+    <div class="mb-2">
+      <img src="https://img.icons8.com/emoji/48/wolf.png" alt="Serigala Logo" class="me-2">
+      <strong style="color:#2f4f4f;">Toko Serigala Hunter</strong>
+    </div>
+    <p class="mb-1">Perlengkapan terbaik untuk para pemburu sejati 🏕️🦌</p>
+    <div class="mb-3">
+      <a href="https://wa.me/6282179480009" class="text-decoration-none me-3" style="color:#25d366;">WhatsApp</a>
+      <a href="https://instagram.com/yehezkielgulltom" class="text-decoration-none me-3" style="color:#6b8e23;">Instagram</a>
+    </div>
+    <small>&copy; 2025 Toko Serigala Hunter. Semua hak dilindungi.</small>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
